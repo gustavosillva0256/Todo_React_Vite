@@ -1,36 +1,139 @@
-body{
+body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: aliceblue;
+  background-color: black;
   padding: 30px;
-  color: rgba(55, 63, 57, 0.467);
+  color: black;
   background-image: url('./fundo.png');
   background-position: center;
   background-size: cover;
-
 }
-.app{
 
+.app {
   max-width: 500px;
   margin: 0 auto 350px;
-  background: linear-gradient(to right, #f6d365, #fda085,#a8df75);
+  background: linear-gradient(to right, #f6d365, #fda085, #a8df75);
   padding: 20px 30px;
   border-radius: 10px;
-  
 }
 
-h1{
+h1 {
   text-align: center;
-
 }
 
-h2{
+h2 {
   margin-bottom: 10px;
-
 }
-p{
+
+p {
   margin: 10px 0px 8px;
-
 }
-input{
+
+input {
   box-sizing: border-box;
+}
+
+button {
+  background-color: #71d810;
+  color: black;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 45px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+button:hover {
+  opacity: 1;
+  background-color: #5bad0f;
+  color: rgb(44, 70, 50);
+}
+
+.complete {
+  background-color: #74dd11;
+}
+
+.remove {
+  background-color: rgb(219, 50, 50);
+}
+
+.remove:hover {
+  opacity: 1;
+  background-color: #c24b14;
+}
+
+.todo-form {
+  padding-bottom: 3.5rem;
+}
+
+.todo-list {
+  margin-bottom: 25px;
+  padding-bottom: 30px;
+  position: relative; /* Adiciona posição relativa para o posicionamento absoluto da seta de rolagem */
+  overflow-y: auto; /* Adiciona rolagem vertical quando necessário */
+}
+
+.todo {
+  background-color: #d8d6d0;
+  box-shadow: #d8d6d0;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input,
+select {
+  background: #d8d6d0;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 45px;
+  width: 80%;
+}
+
+select {
+  background: #d8d6d0;
+}
+
+.filter,
+.search {
+  border-bottom: #a8df75;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+}
+
+.filter-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 8rem;
+}
+
+.filter-options div {
+  flex: 1 1 0;
+}
+
+/* Estilos para a seta de rolagem */
+.scroll-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #71d810;
+  color: black;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.scroll-button:hover {
+  opacity: 1;
+  background-color: #5bad0f;
+  color: rgb(44, 70, 50);
 }
